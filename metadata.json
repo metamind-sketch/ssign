@@ -1,0 +1,6 @@
+{
+  "name": "Signature Rewrite Studio",
+  "description": "Transform your signature into a professional identity. Get a stylish, professional, and personalized signature redesigned starting from just ₹99. Includes interactive real-time signature previewer, customizable styles, practice sheets, and direct order tracking.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

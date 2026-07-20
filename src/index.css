@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Great+Vibes&family=Inter:wght@300;400;500;600;700;800&family=Mrs+Saint+Delafield&family=Pinyon+Script&family=Rochester&family=Sacramento&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-sig-1: "Mrs Saint Delafield", cursive;
+  --font-sig-2: "Alex Brush", cursive;
+  --font-sig-3: "Great Vibes", cursive;
+  --font-sig-4: "Sacramento", cursive;
+  --font-sig-5: "Allura", cursive;
+  --font-sig-6: "Pinyon Script", cursive;
+  --font-sig-7: "Rochester", cursive;
+}
+
+@layer utilities {
+  /* Dynamic stroke animation for the signature simulator */
+  @keyframes draw-signature {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+  .animate-draw {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: draw-signature 2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+}
+
